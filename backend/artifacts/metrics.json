@@ -1,0 +1,234 @@
+{
+  "version": "xgb-20261020-0837",
+  "trained_at": "2026-10-20T08:37:49.268967+00:00",
+  "dataset": {
+    "rows": 5000,
+    "dropout_rate": 0.2158,
+    "train_rows": 4000,
+    "test_rows": 1000
+  },
+  "comparison": [
+    {
+      "model": "Logistic Regression",
+      "roc_auc": 0.8655,
+      "f1": 0.6235,
+      "recall": 0.7706,
+      "precision": 0.5243
+    },
+    {
+      "model": "Random Forest",
+      "roc_auc": 0.8683,
+      "f1": 0.6437,
+      "recall": 0.6386,
+      "precision": 0.6509
+    },
+    {
+      "model": "XGBoost",
+      "roc_auc": 0.8459,
+      "f1": 0.622,
+      "recall": 0.5957,
+      "precision": 0.6517
+    }
+  ],
+  "best_params": {
+    "subsample": 0.9,
+    "n_estimators": 100,
+    "min_child_weight": 5,
+    "max_depth": 4,
+    "learning_rate": 0.01,
+    "colsample_bytree": 0.6
+  },
+  "cv_auc": 0.8705,
+  "threshold": 0.36,
+  "test": {
+    "accuracy": 0.693,
+    "precision": 0.4017,
+    "recall": 0.8611,
+    "f1": 0.5479,
+    "f2": 0.7008,
+    "roc_auc": 0.8592
+  },
+  "confusion_matrix": {
+    "tn": 507,
+    "fp": 277,
+    "fn": 30,
+    "tp": 186
+  },
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.001,
+      "tpr": 0.056
+    },
+    {
+      "fpr": 0.005,
+      "tpr": 0.12
+    },
+    {
+      "fpr": 0.009,
+      "tpr": 0.167
+    },
+    {
+      "fpr": 0.018,
+      "tpr": 0.213
+    },
+    {
+      "fpr": 0.022,
+      "tpr": 0.255
+    },
+    {
+      "fpr": 0.027,
+      "tpr": 0.301
+    },
+    {
+      "fpr": 0.036,
+      "tpr": 0.38
+    },
+    {
+      "fpr": 0.042,
+      "tpr": 0.426
+    },
+    {
+      "fpr": 0.05,
+      "tpr": 0.477
+    },
+    {
+      "fpr": 0.056,
+      "tpr": 0.5
+    },
+    {
+      "fpr": 0.068,
+      "tpr": 0.519
+    },
+    {
+      "fpr": 0.096,
+      "tpr": 0.542
+    },
+    {
+      "fpr": 0.107,
+      "tpr": 0.56
+    },
+    {
+      "fpr": 0.119,
+      "tpr": 0.593
+    },
+    {
+      "fpr": 0.126,
+      "tpr": 0.62
+    },
+    {
+      "fpr": 0.135,
+      "tpr": 0.662
+    },
+    {
+      "fpr": 0.145,
+      "tpr": 0.681
+    },
+    {
+      "fpr": 0.154,
+      "tpr": 0.699
+    },
+    {
+      "fpr": 0.17,
+      "tpr": 0.736
+    },
+    {
+      "fpr": 0.184,
+      "tpr": 0.769
+    },
+    {
+      "fpr": 0.212,
+      "tpr": 0.792
+    },
+    {
+      "fpr": 0.236,
+      "tpr": 0.806
+    },
+    {
+      "fpr": 0.273,
+      "tpr": 0.829
+    },
+    {
+      "fpr": 0.302,
+      "tpr": 0.843
+    },
+    {
+      "fpr": 0.356,
+      "tpr": 0.861
+    },
+    {
+      "fpr": 0.406,
+      "tpr": 0.88
+    },
+    {
+      "fpr": 0.418,
+      "tpr": 0.903
+    },
+    {
+      "fpr": 0.446,
+      "tpr": 0.926
+    },
+    {
+      "fpr": 0.482,
+      "tpr": 0.944
+    },
+    {
+      "fpr": 0.522,
+      "tpr": 0.954
+    },
+    {
+      "fpr": 0.54,
+      "tpr": 0.972
+    },
+    {
+      "fpr": 0.625,
+      "tpr": 0.977
+    },
+    {
+      "fpr": 0.671,
+      "tpr": 0.981
+    },
+    {
+      "fpr": 0.796,
+      "tpr": 0.981
+    },
+    {
+      "fpr": 0.844,
+      "tpr": 0.991
+    },
+    {
+      "fpr": 0.881,
+      "tpr": 0.995
+    },
+    {
+      "fpr": 0.897,
+      "tpr": 0.995
+    },
+    {
+      "fpr": 0.936,
+      "tpr": 0.995
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "feature_importance": {
+    "attendance_pct": 0.3727,
+    "failed_subjects": 0.1353,
+    "avg_marks": 0.0965,
+    "family_income": 0.0825,
+    "prev_marks": 0.0758,
+    "parent_education": 0.0518,
+    "feedback_sentiment": 0.0449,
+    "fee_pending": 0.0407,
+    "assignment_completion": 0.0337,
+    "marks_trend": 0.0212,
+    "extracurricular": 0.0193,
+    "behavior_score": 0.0175,
+    "distance_km": 0.0082
+  }
+}

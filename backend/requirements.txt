@@ -1,0 +1,17 @@
+fastapi==0.135.2
+uvicorn[standard]==0.42.0
+sqlalchemy==2.0.49
+pydantic[email]==2.12.5
+pydantic-settings
+python-multipart
+pyjwt
+httpx
+redis
+psycopg2-binary
+pandas
+numpy
+scikit-learn==1.9.1
+imbalanced-learn==0.14.2
+xgboost==3.4.1
+joblib
+pytest
